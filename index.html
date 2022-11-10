@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inflation Calculator</title>
+        <link rel="icon" href="images/cts.ico">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <!-- Pacifo Font -->
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+        <!-- Bebas Font -->
+        <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+        <!-- Ubuntu -->
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <center><h1 id="div-title">Inflation Calculator</h1></center>
+            
+            <table name="identify">
+                <tr>
+                    <td>Starting CPI:</td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td>
+                        <p>
+                            <input type="text" id="starting_cpi"><br><span id="sc_error"></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ending CPI:</td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td></td><td></td><td></td><td></td><td></td>
+                    <td>
+                        <p>
+                            <input type="text" id="ending_cpi"><br><span id="ec_error"></span>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+    
+            <center>
+                <a id="btn-calc" class="neon_button" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Calculate
+                </a>
+            </center>
+
+            <center>
+                <p id="inflation_rate-output"></p>
+            </center>
+        </div>
+    </body>
+</html>
