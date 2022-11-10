@@ -1,0 +1,171 @@
+body
+{
+    color: white;
+    font-family: Bebas;
+    font-size: 24px;
+    background-image: linear-gradient(-225deg, #9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+}
+
+span
+{
+    color: #E94B3CFF;
+}
+
+h1
+{
+    margin-bottom: 8%;
+}
+
+.wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    padding: 15px;
+    width: 40%;
+    background-image: linear-gradient(to top, #537895 0%, #09203f 100%);
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+input
+{
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+#inflation_rate-output
+{
+    font-size: larger;
+}
+
+/* Neon Text Effect */
+#div-title
+{
+    color: #F5F9FF;
+    font-size: 40px;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 0;
+    font-family: 'Pacifico';
+    animation: neon 60s infinite;
+}
+
+@keyframes neon
+{
+    0%, 39%, 41%, 59%, 61%, 100%
+    {
+        text-shadow:
+        white 0 0 12px,
+        #ff3aad 0 0 24px,
+        #ff3aad 0 0 36px;
+    }
+
+    40%, 60%
+    {
+        text-shadow: none;
+    }
+}                                       /* Neon Text Effect - Finished */
+
+/* Neon Button Effect */
+.neon_button
+{
+    position: relative;
+    display: inline-block;
+    color: #F9F871;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    padding: 15px 30px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neon_button:hover
+{
+    color: #2F3300;
+    font-weight: bolder;
+    background: #F9F871;
+    box-shadow: 0 0 10px #F9F871,
+                0 0 40px #F9F871,
+                0 0 80px #F9F871;
+    transition-delay: 1.25s;
+}
+
+.neon_button span
+{
+    position: absolute;
+    display: block;
+}
+
+.neon_button span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #F9F871);
+}
+
+.neon_button:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+
+.neon_button span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #F9F871);
+}
+
+.neon_button:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.50s;
+}
+
+.neon_button span:nth-child(2)
+{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #F9F871);
+}
+
+.neon_button:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.neon_button span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #F9F871);
+}
+
+.neon_button:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}                                     /* Neon Button Effect - Finished */
